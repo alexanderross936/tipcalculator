@@ -1,0 +1,16 @@
+<%= form_with(model: @tip, local: true ) do |f| %>
+<p>What is the total bill?</p>
+<div class="field">
+    <%= f.label :TotalBill %>
+    $<%= f.text_field :totalbill %>
+</div>
+<p>What percent tip would you like to leave?</p>
+<div class="field">
+  <%= f.label :Tip %>
+  <%= f.text_field :percent %>%
+</div>
+
+  <div class="action">
+  <%= f.submit "Submit" %>
+</div>
+<% end %>
